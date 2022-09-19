@@ -7,7 +7,7 @@ import java.util.Random;
 import com.zegocloud.uikit.prebuilt.videoconference.ZegoUIKitPrebuiltVideoConferenceConfig;
 import com.zegocloud.uikit.prebuilt.videoconference.ZegoUIKitPrebuiltVideoConferenceFragment;
 
-public class CallConference extends AppCompatActivity {
+public class ConferenceActivity extends AppCompatActivity {
 
 
     private String mConferenceID;
@@ -18,10 +18,10 @@ public class CallConference extends AppCompatActivity {
 
         mConferenceID = getIntent().getStringExtra("conferenceID");
 
-        addCallFragment();
+        addFragment();
     }
 
-    public void addCallFragment() {
+    public void addFragment() {
         long appID = ;
         String appSign = "";
 
