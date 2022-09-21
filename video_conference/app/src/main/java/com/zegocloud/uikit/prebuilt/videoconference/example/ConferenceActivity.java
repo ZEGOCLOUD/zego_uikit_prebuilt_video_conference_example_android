@@ -23,8 +23,8 @@ public class ConferenceActivity extends AppCompatActivity {
     }
 
     public void addFragment() {
-//        long appID = ;
-//        String appSign = "";
+        long appID = ;
+        String appSign = "";
 
         String conferenceID = mConferenceID;
         String userID = Build.MANUFACTURER + "_" + generateUserID();
