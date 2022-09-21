@@ -15,6 +15,7 @@ public class ConferenceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_conference);
 
         mConferenceID = getIntent().getStringExtra("conferenceID");
 
@@ -22,12 +23,12 @@ public class ConferenceActivity extends AppCompatActivity {
     }
 
     public void addFragment() {
-        long appID = ;
-        String appSign = "";
+//        long appID = ;
+//        String appSign = "";
 
         String conferenceID = mConferenceID;
         String userID = Build.MANUFACTURER + "_" + generateUserID();
-        String userName = "Name_" + userID;
+        String userName = userID + "_Name";
 
         ZegoUIKitPrebuiltVideoConferenceConfig config = new ZegoUIKitPrebuiltVideoConferenceConfig();
 

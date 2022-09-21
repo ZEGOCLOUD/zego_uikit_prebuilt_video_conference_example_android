@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
             textInputLayout.setError("");
-            Intent intent = new Intent(MainActivity.this, CallActivity.class);
+            Intent intent = new Intent(MainActivity.this, ConferenceActivity.class);
             intent.putExtra("conferenceID", conferenceID);
             startActivity(intent);
         });
