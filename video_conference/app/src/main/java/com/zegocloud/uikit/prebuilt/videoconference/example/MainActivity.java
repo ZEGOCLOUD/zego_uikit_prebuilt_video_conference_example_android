@@ -11,16 +11,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.join_btn).setOnClickListener(v -> {
-            TextInputLayout textInputLayout = findViewById(R.id.text_input_layout);
-            String conferenceID = textInputLayout.getEditText().getText().toString();
-            if (conferenceID.isEmpty()) {
-                textInputLayout.setError("please input conferenceID");
-                return;
-            }
-            textInputLayout.setError("");
+        findViewById(R.id.button).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ConferenceActivity.class);
-            intent.putExtra("conferenceID", conferenceID);
             startActivity(intent);
         });
     }

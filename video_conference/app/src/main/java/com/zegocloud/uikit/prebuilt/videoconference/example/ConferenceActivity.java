@@ -3,30 +3,25 @@ package com.zegocloud.uikit.prebuilt.videoconference.example;
 import android.os.Build;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import java.util.Random;
 import com.zegocloud.uikit.prebuilt.videoconference.ZegoUIKitPrebuiltVideoConferenceConfig;
 import com.zegocloud.uikit.prebuilt.videoconference.ZegoUIKitPrebuiltVideoConferenceFragment;
+import java.util.Random;
 
 public class ConferenceActivity extends AppCompatActivity {
-
-
-    private String mConferenceID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conference);
 
-        mConferenceID = getIntent().getStringExtra("conferenceID");
-
         addFragment();
     }
 
     public void addFragment() {
-        long appID = ;
-        String appSign = "";
+        long appID = yourAppID;
+        String appSign = yourAppSign;
 
-        String conferenceID = mConferenceID;
+        String conferenceID = "test_conference_id";
         String userID = Build.MANUFACTURER + "_" + generateUserID();
         String userName = userID + "_Name";
 
