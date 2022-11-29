@@ -22,7 +22,7 @@ public class ConferenceActivity extends AppCompatActivity {
         String appSign = yourAppSign;
 
         String conferenceID = "test_conference_id";
-        String userID = Build.MANUFACTURER + "_" + generateUserID();
+        String userID = generateUserID();
         String userName = userID + "_Name";
 
         ZegoUIKitPrebuiltVideoConferenceConfig config = new ZegoUIKitPrebuiltVideoConferenceConfig();
